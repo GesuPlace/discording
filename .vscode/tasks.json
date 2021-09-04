@@ -1,0 +1,39 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Install the project",
+            "type": "shell",
+            "windows": {
+                "command": "\".\\tools\\install.cmd\""
+            },
+            "args": [],
+            "problemMatcher": [],
+			"presentation": {
+                "reveal": "always",
+                "panel": "new",
+				"clear": true
+			}
+        },
+        {
+            "label": "Build the project",
+            "type": "shell",
+            "windows": {
+                "command": "\".\\tools\\build.cmd\""
+            },
+            "args": [],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+			"presentation": {
+                "reveal": "always",
+                "panel": "new",
+				"clear": true
+			}
+        },
+    ]
+}
