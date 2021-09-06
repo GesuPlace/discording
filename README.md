@@ -51,10 +51,23 @@
 
 - [Table of Contents](#table-of-contents)
 - [Deploy to Heroku](#deploy-to-heroku)
+  - [Origin](#origin)
+  - [Fork](#fork)
 - [For contributors](#for-contributors)
 
 ## Deploy to Heroku
+
+### Origin
+
+No app.json for Heroku at 21.09.06:
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jammer312/discording)
+
+### Fork
+
+Has app.json for Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GesuPlace/discording)
 
 ## For contributors
 

@@ -1,0 +1,24 @@
+{
+    "name": "Discording",
+    "description": "This bot provides interaction between the game servers SS13 and the game servers in the Discord.",
+    "repository": "https://github.com/GesuPlace/discording",
+    "logo": "https://github.com/GesuPlace/discording/raw/master/.github/static/1200px-Go_Logo_Blue.svg.png",
+    "keywords": [
+        "animus",
+        "bot",
+        "bridge",
+        "byond dm",
+        "byond dream maker",
+        "byond",
+        "crawler",
+        "discord",
+        "dm",
+        "dream maker",
+        "go",
+        "golang",
+        "internet",
+        "networking",
+        "space station 13",
+        "ss13"
+    ]
+}
