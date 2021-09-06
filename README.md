@@ -50,7 +50,11 @@
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
+- [Deploy to Heroku](#deploy-to-heroku)
 - [For contributors](#for-contributors)
+
+## Deploy to Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jammer312/discording)
 
 ## For contributors
 
