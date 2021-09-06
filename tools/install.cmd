@@ -11,6 +11,8 @@ ECHO This script will install the project dependences.
 
 go.exe version
 @REM go get -u github.com/kardianos/govendor
+@REM govendor list
+@REM govendor remove +u
 go.exe mod init
 go.exe mod vendor
 
