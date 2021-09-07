@@ -2,9 +2,10 @@ package main
 
 import (
 	"database/sql"
-	_ "github.com/lib/pq"
 	"log"
 	"os"
+
+	_ "github.com/lib/pq"
 )
 
 var Database *sql.DB
@@ -244,7 +245,7 @@ func schema_init() {
 			"webkey":      text_db_type,
 			"admins_page": text_db_type,
 			"color":       int_bd_type,
-			"conv_mode":   int_bd_type,
+			"mode":        int_bd_type, // conv_mode
 		}})
 
 	add_table(table_schema{
@@ -276,13 +277,13 @@ func schema_init() {
 			"next_round": int_bd_type,
 		}})
 	add_table(table_schema{
-		name:"discord_ban_overrides",
+		name: "discord_ban_overrides",
 		fields: map[string]string{
-			"server": text_db_type,
-			"ckey": text_db_type,
-			"type": int_bd_type,
+			"server":     text_db_type,
+			"ckey":       text_db_type,
+			"type":       int_bd_type,
 			"permission": int_bd_type,
-		},})
+		}})
 	/*
 		add_table(table_schema{
 			name:"",
