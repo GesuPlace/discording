@@ -1,13 +1,7 @@
 
-@ECHO OFF
-CLS
-SETLOCAL ENABLEDELAYEDEXPANSION
+CALL "%~dp0_config.cmd"
 
-SET PATH_ROOT=%~dp0..\
-@REM SET GOPATH=C:\Users\User\go
-CD /D "%PATH_ROOT%"
-
-ECHO This script will install the project dependences.
+ECHO This script will install the project dependences (for the first run).
 
 go.exe version
 @REM go get -u github.com/kardianos/govendor
@@ -18,6 +12,6 @@ go.exe mod vendor
 
 ECHO Done working.
 
-PAUSE
+IF "%PAUSE_IN_END%" == "1" PAUSE
 ENDLOCAL
 EXIT /B %ERRORLEVEL%
